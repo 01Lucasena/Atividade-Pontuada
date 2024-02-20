@@ -1,4 +1,5 @@
-programa{
+programa
+{
 //Uma financeira usa o seguinte critério para conceder empréstimos: o valor total do empréstimo
 //deve ser até dez vezes o valor da renda mensal do solicitante e o valor da prestação deve ser no
 //máximo 30% da renda mensal do solicitante. Escreva um programa que leia a renda mensal de
@@ -25,7 +26,7 @@ programa{
 	valorParcela = valorEmprestimo / numeroPrestacao
 	
 	
-	se(valorEmprestimo >= rendaMes * 10 e valorParcela >= rendaMes * 0.30){
+	se(valorEmprestimo <= rendaMes * 10 e valorParcela <= rendaMes * 0.30){
 		escreva("Conceder Empréestimo")
 		
 	}senao{
