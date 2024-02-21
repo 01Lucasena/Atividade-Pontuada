@@ -24,12 +24,12 @@ programa{
     escreva("\nÁlcool: R$", preco)
 		
     se(litrosCombustivel<=25){
-			desconto = preco * 0.2
+			desconto = preco * 0.02
 			precoFinal = preco - desconto
       escreva("\nDesconto: 2%/litro")  
 
 		}se(litrosCombustivel>25){
-			desconto = preco * 0.4
+			desconto = preco * 0.04
 			precoFinal = preco - desconto
       escreva("\nDesconto: 4%/litro") 
 
@@ -43,12 +43,12 @@ programa{
     escreva("\nGasolina: R$", preco)
 		
     se(litrosCombustivel<=25){
-			desconto = preco * 0.3
+			desconto = preco * 0.03
 			precoFinal = preco - desconto
       escreva("\nDesconto: 3%/litro") 
 		
 		}se(litrosCombustivel>25){
-			desconto = preco * 0.5
+			desconto = preco * 0.05
 			precoFinal = preco - desconto
       escreva("\nDesconto: 5%/litro")
 
