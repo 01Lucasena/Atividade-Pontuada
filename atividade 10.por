@@ -1,4 +1,4 @@
-programa{
+programa{
 //Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da
 //seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-
 //se que o preço do litro da gasolina é R$ 6,59 e o preço do litro do álcool é R$ 3,79.
@@ -6,7 +6,7 @@ programa{
 	
 	funcao inicio(){
 	//Declarar Variáveis
-	real litrosCombustivel, preco, desconto, precoFinal
+	real litrosCombustivel, preco, desconto, precoFinal, precoFinalComDesconto
 	caracter tipo
 
 	//Solicitar dados ao usuário
@@ -21,29 +21,39 @@ programa{
 		caso'A':
 		preco = litrosCombustivel * 3.79
 		
-		se(litrosCombustivel<=25){
-			desconto = (2*100)/preco
-			precoFinal = preco - desconto
+    escreva("\nÁlcool: R$", preco)
 		
-		}se(litrosCombustivel>25){
-			desconto = (4*100)/preco
+    se(litrosCombustivel<=25){
+			desconto = preco * 0.2
 			precoFinal = preco - desconto
+      escreva("\nDesconto: 2%/litro")  
+
+		}se(litrosCombustivel>25){
+			desconto = preco * 0.4
+			precoFinal = preco - desconto
+      escreva("\nDesconto: 4%/litro") 
+
 		}
-		escreva("Valor Total: ", precoFinal)
+		escreva("\nValor Total: R$", precoFinal)
 	pare
 		
 		caso'G':
 		preco = litrosCombustivel * 6.59
 		
-		se(litrosCombustivel<=25){
-			desconto = (3*100)/preco
+    escreva("\nGasolina: R$", preco)
+		
+    se(litrosCombustivel<=25){
+			desconto = preco * 0.3
 			precoFinal = preco - desconto
+      escreva("\nDesconto: 3%/litro") 
 		
 		}se(litrosCombustivel>25){
-			desconto = (5*100)/preco
+			desconto = preco * 0.5
 			precoFinal = preco - desconto
+      escreva("\nDesconto: 5%/litro")
+
 		}
-		escreva("Valor Total: ", precoFinal)
+		escreva("\nValor Total: R$", precoFinal)
 	pare	
 		
 	}
