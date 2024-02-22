@@ -1,9 +1,11 @@
-programa{
+programa
+{
 	//Faça um algoritmo que leia o nome, o sexo e o estado civil de uma pessoa. Caso sexo seja “F” e
 	//estado civil seja “CASADA”, solicitar o tempo de casada (anos). Por fim, mostre os dados do
 	//usuário.
 	
-	funcao inicio(){
+	funcao inicio()
+{
 		//Declarar Variáveis
 		cadeia nome, estadoCivil
 		caracter sexo  
@@ -30,7 +32,7 @@ programa{
 		escreva("\nSexo: ",sexo)
 		escreva("\nEstado Civil: ",estadoCivil)
 		}se(sexo=='F' e estadoCivil=="Casada"){
-			escreva("Tempo de casamento (anos): ",anos) 
+			escreva("\nTempo de casamento (anos): ",anos) 
 		}
 		
 		  
