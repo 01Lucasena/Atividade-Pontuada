@@ -26,12 +26,12 @@ programa{
 		
     se(litrosCombustivel<=25){
 			desconto = preco * 0.02
-			precoFinal = litrosCombustivel * desconto
+			precoFinal = litrosCombustivel - desconto
       escreva("\nDesconto: 2%/litro")  
 
 		}se(litrosCombustivel>25){
 			desconto = preco * 0.04
-			precoFinal = litrosCombustivel * desconto
+			precoFinal = litrosCombustivel - desconto
       escreva("\nDesconto: 4%/litro") 
 
 		}
@@ -45,12 +45,12 @@ programa{
 		
     se(litrosCombustivel<=25){
 			desconto = preco * 0.03
-			precoFinal = litrosCombustivel * desconto
+			precoFinal = litrosCombustivel - desconto
       escreva("\nDesconto: 3%/litro") 
 		
 		}se(litrosCombustivel>25){
 			desconto = preco * 0.05
-			precoFinal = litrosCombustivel * desconto
+			precoFinal = litrosCombustivel - desconto
       escreva("\nDesconto: 5%/litro")
 
 		}
