@@ -1,7 +1,9 @@
-programa{
+programa
+{
 	//1.Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor
 	//que C, caso contrário, imprima que a A + B é maior que C.
-	funcao inicio(){
+	funcao inicio()
+{
 	//Declarar Variáveis
 	inteiro valorA, valorB, valorC, somaAB
 
@@ -19,10 +21,14 @@ programa{
 	somaAB = valorA + valorB
 	
 	se(somaAB<valorC){
-		escreva("\nSoma de A+B é menor que C")
-		}senao{
+			escreva("\nSoma de A+B: ",somaAB)
+			escreva("\nSoma de A+B é menor que C")
+		
+	}senao{
+			escreva("\nSoma de A+B: ",somaAB)
 			escreva("\nSoma de A+B é maior que C")
-		}
+		
+	}
 	
 	
 		
