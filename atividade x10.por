@@ -55,7 +55,10 @@ programa{
 		}
 		escreva("\nValor Total: R$", precoFinal)
 	pare	
-		
+
+	caso contrario:
+		escreva("\nOpção inválida")
+	
 	}
 
 	
