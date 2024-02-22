@@ -17,11 +17,12 @@ programa{
 	leia(tipo)
 
 	//Calcular Preço 
+	
 	escolha(tipo){
 		caso'A':
 		preco = litrosCombustivel * 3.79
 		
-    escreva("\nÁlcool: R$", preco)
+    escreva("\nÁlcool: R$3,79")
 		
     se(litrosCombustivel<=25){
 			desconto = preco * 0.02
@@ -40,7 +41,7 @@ programa{
 		caso'G':
 		preco = litrosCombustivel * 6.59
 		
-    escreva("\nGasolina: R$", preco)
+    escreva("\nGasolina: 6,59R$")
 		
     se(litrosCombustivel<=25){
 			desconto = preco * 0.03
